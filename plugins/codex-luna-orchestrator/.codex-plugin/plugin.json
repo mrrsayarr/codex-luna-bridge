@@ -1,0 +1,27 @@
+{
+  "name": "codex-luna-orchestrator",
+  "version": "0.2.0",
+  "description": "Project workflow skill for Codex-led implementation through a Chat On Steroids broker-prime and Luna workers.",
+  "author": {
+    "name": "Local developer"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "codex",
+    "orchestration",
+    "mcp",
+    "local"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Luna Orchestrator",
+    "shortDescription": "Coordinate bounded Luna work with Codex review.",
+    "longDescription": "A local Codex workflow skill that queues bounded tasks for a Chat On Steroids broker-prime, preserves Luna worker reuse, validates returned file scope, and requires independent review.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "defaultPrompt": [
+      "Implement this change using the Luna orchestration workflow."
+    ]
+  }
+}

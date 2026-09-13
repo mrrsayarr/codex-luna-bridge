@@ -1,0 +1,16 @@
+[features]
+multi_agent = true
+
+[agents.reviewer]
+description = "Independent read-only reviewer for delegated Luna implementation work"
+config_file = "agents/reviewer.toml"
+
+[mcp_servers.codex_luna_bridge]
+command = "node"
+args = ["dist/server.js"]
+cwd = "."
+enabled = true
+startup_timeout_sec = 10
+tool_timeout_sec = 120
+enabled_tools = ["delegate_task", "get_task_status", "get_task_result", "request_rework"]
+
