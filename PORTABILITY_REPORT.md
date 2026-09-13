@@ -145,5 +145,4 @@ If the worker reports `PLUGIN_DISABLED`, `conflicted`, missing tools, or stale s
 
 ## Recommendation
 
-For reuse across many machines, keep this repository as the portable source of truth and treat Chat On Steroids setup as a short per-machine bootstrap step. The next useful improvement would be a read-only `doctor` command that checks Node version, build status, port availability, and expected broker configuration without modifying external CoS state.
-
+For reuse across many machines, keep this repository as the portable source of truth and treat Chat On Steroids setup as a short per-machine bootstrap step. The repository now includes a read-only `npm run doctor` command that checks the Node version, required project files, build output, and broker reachability without modifying external Chat On Steroids state.

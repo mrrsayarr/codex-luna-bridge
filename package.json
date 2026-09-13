@@ -1,8 +1,10 @@
 {
   "name": "codex-luna-bridge",
   "version": "0.2.0",
+  "description": "A lightweight local-first orchestration bridge where Codex leads and reviews while Chat On Steroids workers implement bounded tasks.",
   "private": true,
   "type": "module",
+  "license": "MIT",
   "engines": {
     "node": ">=20"
   },
@@ -10,7 +12,9 @@
     "dev": "tsx src/server.ts",
     "build": "tsc -p tsconfig.json",
     "start": "node dist/server.js",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "check": "npm run typecheck && npm run build",
+    "doctor": "node doctor.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.4",
